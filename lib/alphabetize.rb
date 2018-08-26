@@ -1,3 +1,7 @@
 def alphabetize(arr)
-  # code here
+  alpha = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars
+
+  arr.sort_by do |p|
+    p.chars.map { |c| alpha.index(c) }
+  end
 end
